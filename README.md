@@ -20,6 +20,6 @@ Desarrollado por : Juan Alvarez Carrasco
 
 - Framework : DJANGO 
 
-## El por qué de este proyecto.
+## El porqué de este proyecto.
 
  El interes por aprender un nuevo lenguaje como Python, el cual me parece de un gran potencial ,  aplicandolo a un campo donde me siento bastante comodo como son los deportes. Ademas de poder crear un servicio de gran utilidad para el publico de este deporte en concreto. 
