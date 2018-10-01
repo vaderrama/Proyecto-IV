@@ -14,11 +14,12 @@ Desarrollado por : Juan Alvarez Carrasco
 
 - Lenguaje de programacion : Principalmente Python ( posible php , html , css )
 
-- Como BD utilizaremos : La proporcionada por el Framework de Python , DJANGO ( No es definitivo )
+- Como BD utilizaremos : SQLite ( No es definitivo )
 
 - Editores de texto : Xcode 
 
-- Framework : DJANGO 
+- Framework : Django
+
 
 ## El porqué de este proyecto.
 
