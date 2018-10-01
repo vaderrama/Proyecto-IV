@@ -14,7 +14,7 @@ Desarrollado por : Juan Alvarez Carrasco
 
 - Lenguaje de programacion : Principalmente Python ( posible php , html , css )
 
-- Como BD utilizaremos : SQLite ( No es definitivo )
+- Como BD utilizaremos : SQLite ( Por ver )
 
 - Editores de texto : Xcode 
 
