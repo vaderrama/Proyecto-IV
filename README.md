@@ -20,6 +20,8 @@ Desarrollado por : Juan Alvarez Carrasco
 
 - Framework : Django
 
+- Test : UnitTest
+
 
 ## El porqué de este proyecto.
 
