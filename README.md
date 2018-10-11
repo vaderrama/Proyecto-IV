@@ -1,6 +1,6 @@
 # Repositorio para el proyecto de la asignatura IV 
 
-https://travis-ci.org/vaderrama/Proyecto-IV.svg?branch=master
+[![Build Status](https://travis-ci.org/vaderrama/Proyecto-IV.svg?branch=master)](https://travis-ci.org/vaderrama/Proyecto-IV)
 
 
 ## "SnowMet" Microservicio web 
