@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="UTF-8">
+                <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+                    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                            <link rel="shortcut icon" href="{{ url_for('static', filename='iconos/iconohtml.png') }}">
+                                
+                                </head>
+
+    <body>
+        
+        
+        <header >
+            
+            <div style ="height: 30%" >
+                
+                <div class="logo" >
+                    <img style ="width: 250px; height: 200px; float: left" src="{{ url_for('static', filename='images/HTML5.png') }}" >
+                        </div>
+                
+                <div class="titulo" >
+                    <h1> SnowMet</h1>
+                </div>
+                
+                <div class="subtitulo" >
+                    <h2>App para el snow</h2>
+                </div>
+                
+                <div class= "login" >
+                    <fieldset >
+                        <legend>Usuario</legend>
+                        {% if usuario %}
+                        
+                        <p>Bienvenido {{ usuario }}!</p>
+                        <form action="/logout" method="post" style="display: inline-block;">
+                            <input type="submit" value="Log out" name = "Logout" >
+                                </form>
+                        
+                        {% else %}
+                        <form action="/login" method="post">
+                            Usuario: <input type="text" name="username" > <br>
+                                Contraseña: <input type="password" name="passwd" > <br><br>
+                                    <input type="submit" value="Log in" name = "Login" style="margin-right: 90px">
+                                        </form>
+                        {% endif %}
+                    </fieldset>
+                </div>
+                </>
+                
+                </header>
