@@ -1,5 +1,5 @@
 import pytest
-from main import get_weather
+from app.main import get_weather
 
 
 def test_get_weather():
