@@ -5,17 +5,21 @@ https://travis-ci.org/vaderrama/Proyecto-IV
 
 ## "SnowMet" Microservicio web 
 
-Es proyecto consistira en el desarrollo de un microservicio web orientado al mundo del Snowboard. Donde trataremos en un principio el servicio de meteorologia de Sierra nevada , pistas disponibles segun tu nivel de habilidad y tu equipo. Este servicio puede ser ampliado para mostrar capacidad de alquiler en nuestro servicio , asi como compra de forfeits o alquiler de profesores. 
-    
+Es proyecto consistira en el desarrollo de un microservicio web orientado al mundo del Snowboard. Donde trataremos en un principio el servicio de meteorologia de las distintas ciudades , asi como el de Sierra Nevada , indicando las caracteristicas concretas de este sitio. Utilizaremos para ello una API de [OpenWeatherMap](https://openweathermap.org/).
+
 Nombre del proyecto: SnowMet
-    
+
 Desarrollado por : Juan Alvarez Carrasco
-    
-    
+
+## Colaboración
+Este proyecto sera unificado con el proyecto de [Alvarosanpal](https://github.com/Alvarosanpal/Proyecto_IV) , el cual se encargará de la gestion de equipamiento necesario , asi como su recomendacion personalizada.
+
+Este servicio puede ser ampliado para mostrar capacidad de alquiler en nuestro servicio , asi como compra de forfeits o alquiler de profesores. 
+
     
 ## Herramientas utilizadas 
 
-- Lenguaje de programacion : Principalmente Python ( posible php , html , css )
+- Lenguaje de programacion : Principalmente Python. Además HTML y CSS
 
 - Como BD utilizaremos : MongoDB ( Posible cambio en un futuro )
 
