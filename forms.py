@@ -1,13 +1,13 @@
-from wtforms import Form
-from wtforms import StringField , TextField
-from wtf.fields.html5 import EmailField
+from flask_wtf import Form
+from wtforms.validators import DataRequired
+from wtforms import Form, BooleanField, StringField, PasswordField, validators
 
+class LoginForm(Form):
+    openid = StringField('openid', validators=[DataRequired()])
+    remember_me = BooleanField('remember_me', default=False)
 
-class Formulario(Form):
-    usuario = StringField ('username')
-    passwd = StringField ( 'Contraseña' )
-
-
+class CiudadForm(Form):
+    city = StringField('Ciudad ( Ej: Granada, ES )', [validators.Length(min=4, max=25)])
 
 
 
