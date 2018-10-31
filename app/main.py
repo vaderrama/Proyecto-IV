@@ -36,7 +36,7 @@ def get_weather(city):
 
 @app.route('/' ,methods=['GET', 'POST'])
 def index():
-    
+    weather=None
     form = CiudadForm(request.form)
     
     
