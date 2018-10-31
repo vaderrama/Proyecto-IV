@@ -33,8 +33,12 @@ def get_weather(city):
     }
     return weather
 
+@app.route('/')
+def inicio():
+    return jsonify(status="Ok")
 
-@app.route('/' ,methods=['GET', 'POST'])
+
+@app.route('/app' ,methods=['GET', 'POST'])
 def index():
     weather=None
     form = CiudadForm(request.form)
