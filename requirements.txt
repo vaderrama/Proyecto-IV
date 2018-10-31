@@ -3,8 +3,3 @@ pytest==3.8.1
 requests
 WTForms
 flask-wtf
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 929168b607efb1c78b9893f4afa16ac83a036ca2
