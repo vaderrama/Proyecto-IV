@@ -5,11 +5,6 @@ from app import app
 
 
 
-@app.route('/login', methods=['GET','POST'])
-def login():
-    if request.method == 'POST':
-        session['username'] = request.form['username']
-    return redirect(url_for('index'))
 
 
 @app.route('/logout', methods=['GET','POST'])
