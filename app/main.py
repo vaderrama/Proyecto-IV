@@ -1,4 +1,4 @@
-from flask import render_template, flash, redirect , session ,request , redirect , url_for
+from flask import render_template, flash, redirect , session ,request , redirect , url_for,jsonify
 import requests
 from .forms import LoginForm,CiudadForm
 from app import app
