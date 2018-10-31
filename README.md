@@ -40,7 +40,7 @@ Este servicio puede ser ampliado para mostrar capacidad de alquiler en nuestro s
 
 ## Instalacion Necesaria 
 
-Utilizaremos el siguiente comando : $ pip install -r app/requirements.txt
+Utilizaremos el siguiente comando : $ pip install -r requirements.txt
 
 ## Ejecucion de los test
 
