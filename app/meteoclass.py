@@ -1,4 +1,5 @@
-from flask import Flask
+from flask import Flask, render_template, request, redirect, url_for, jsonify
+import json
 app = Flask(__name__)
 
 
@@ -24,25 +25,25 @@ class meteo:
             'temperature': r['main']['temp'],
             'description': r['weather'][0]['description'],
             'icon': r['weather'][0]['icon'],
-            'wind': r['wind']['speed']
-            'humidity':r['main']['humidity']
+            'wind': r['wind']['speed'],
+            'humidity' : r['main']['humidity'],
     
         }
 
-    return weather
+        return weather
 
 
 
-    def statusTiempo( weather ):
+    def statusTiempo(weather):
         tmp = weather["temperature"]
         viento = weather["wind"]
         hume = weather["humidity"]
         
         
-        if tmp <= 2 && viento >= 40 && hume >= 50
+        if tmp <= 2 and viento > 40 and hume > 50:
             status = ' Las probabilidades de que las pistas esten cerradas o no se pueda practicar deporte sin riesgos son muy altas'
 
-        if tmp >0 && tmp < 5 && viento > 0 && viento < 10  && hume > 20 && hume < 60
+        if tmp >0 and tmp < 5 and viento > 0 and viento < 10  and hume > 20 and hume < 60:
             status = ' Las condiciones son idoneas. Disfruta del dia! '
     
 
