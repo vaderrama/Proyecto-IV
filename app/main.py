@@ -1,10 +1,8 @@
-from flask import render_template, flash, redirect , session ,request , redirect , url_for,jsonify
+from flask import Flask, render_template, redirect , session ,request , redirect , url_for,jsonify
 import requests
-from .forms import LoginForm,CiudadForm
-from app import app
+from forms import LoginForm,CiudadForm
 
-
-
+app = Flask(__name__)
 
 
 @app.route('/logout', methods=['GET','POST'])
