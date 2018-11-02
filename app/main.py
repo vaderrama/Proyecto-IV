@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect , session ,request , redirect , url_for,jsonify
 import requests
 from app.forms import LoginForm,CiudadForm
-import meteoclass
+from app.meteoclass import *
 
 app = Flask(__name__)
 
