@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect , session ,request , redirect , url_for,jsonify
 import requests
-from forms import LoginForm,CiudadForm
+from app.forms import LoginForm,CiudadForm
 import meteoclass
 
 app = Flask(__name__)
@@ -54,16 +54,18 @@ def statusTiempo(weather):
 def index():
     weather=None
     city=None
+    descripcion = None
+    
     form = CiudadForm(request.form)
     
     
     if request.method == 'POST':
         city=request.form['city']
         weather = get_weather(city)
+        descripcion = weather["description"]
     
     
-    
-    descripcion = weather["description"]
+
     
     
 
