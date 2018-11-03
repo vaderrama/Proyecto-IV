@@ -7,8 +7,6 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://snowmet.herokuapp.com/app)
 
-)
-
 
 ## "SnowMet" Microservicio web 
 
@@ -38,7 +36,7 @@ Este servicio puede ser ampliado para mostrar capacidad de alquiler en nuestro s
 
 - Integración Continua : Travis-CI
 
--Despliege : Heroku
+- Despliege : Heroku
 
 
 ## El porqué de este proyecto.
@@ -61,9 +59,9 @@ Hemos utilizado el sistema Heroku por su versatilidad a la hora de desplegar apl
 
 Para proceder a su despliegue , hemos vinculado nuestro repositorio de GitHub con el sistema Heroku desde su pagina web , donde de manera muy intuitiva podemos enlazarlo y al hacer click en la pestaña **Deploy Branch** , el servicio cargará nuestro repositorio en su sistema para poder desplegarla.
 
-Despliegue / : https://snowmet.herokuapp.com/ 
+Despliegue : https://snowmet.herokuapp.com/ 
 
-Despliegue /app ( Microservicio **SnowMet** actualmente funcionando ) : https://snowmet.herokuapp.com/app
+Despliegue ***< /app ( Microservicio **SnowMet** actualmente funcionando )> :*** https://snowmet.herokuapp.com/app
 
 
 ## Avance SnowMet
