@@ -24,11 +24,9 @@ Este servicio puede ser ampliado para mostrar capacidad de alquiler en nuestro s
     
 ## Herramientas utilizadas 
 
-- Lenguaje de programacion : Principalmente Python. Además HTML y CSS
+- Lenguaje de programacion : Python. Además HTML y CSS
 
 - Como BD utilizaremos : MongoDB ( Posible cambio en un futuro )
-
-- Editores de texto : Xcode 
 
 - Framework : Flask
 
@@ -62,14 +60,35 @@ Para proceder a su despliegue , hemos vinculado nuestro repositorio de GitHub co
 Despliegue : https://snowmet.herokuapp.com/ 
 
 Despliegue ***< /app ( Microservicio **SnowMet** actualmente funcionando )> :*** https://snowmet.herokuapp.com/app
+- ### Procfile
 
+    En nuestro procfile disponemos de dos lineas :
+        - En la primera linea se indica al procfile donde se encuentra nuestro archivo principal y como ejecutarlo , utilizamos el proceso **"web"**. Además del log
+        - La segunda linea no la esta activada actualmente , ya que no la necesitamos por ahora.  ( "worker" )
+        
 
-## Avance SnowMet
+## Descripción Clase y archivos principales
 
 Actualmente esta app dispone de una clase llamada **meteoclass.py**  , la cual se encarga de la gestion de las variables referentes al clima , asi como su llamada a la API y la gestion de esta información. Esta clase tambien informa del estatus propio externo a la API.
 
 Disponemos de una clase **forms.py** para la gestion de los formularios en nuestro sistema web. 
 
-El fichero principal **main.py** se encarga de atender las peticiones de la app de manera directa. Asi como de enviar la información necesaria a nuestro sistema web formado por HTML , CSS y PYTHON. 
+El fichero principal **main.py** se encarga de atender las peticiones de la app de manera directa. 
 
-El sistema web esta alojado en las carpetas **templates** y **static**. Donde podremos encontrar las diferentes paginas .html y los distintos estilos css utilizados. 
+El sistema web esta alojado en las carpetas **templates** y **static**. Donde podremos encontrar las diferentes herramientas utilizadas para su correcta estructura , visualización y estilo.
+
+
+## Avance SnowMet
+
+Actualmente , el microservicio dispone de dos rutas :
+
+****/app**** : En esta ruta , la aplicación despone de 4 menus en forma de botón. En ellos podemos acceder al "Home" , "Meteo" , "Equipacion" , "About".
+            
+            - Home : Directorio principal de la app. Breve descripción del proyecto
+            - Meteo : Zona de analisis meteorológico , donde introduciendo una Ciudad podemos observar las distintas características de la climatologia. 
+            - Equipación : Zona de ayuda , analisis y estimacion del mejor equipamiento necesario para tu nivel de habilidad. ( Parte correspondiente a nuestra Colaboracion [Equipamiento](https://github.com/Alvarosanpal/Proyecto_IV))
+            - About : Información respecto al creador.
+
+****/ , /status**** : En esta ruta se nos devuelve un JSON "OK" para poder visualizar el funcionamiento del sistema. 
+
+
