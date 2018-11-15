@@ -1,0 +1,68 @@
+[
+    {
+        "nombre":"Perdiz",
+        "longitud":"1467",
+        "dificultad":"Verde",
+        "operativa":"True",
+        "descripcion":"Pista para iniciacion y perfeccionamiento"
+          
+    },
+    {
+        "nombre":"Amapola",
+        "longitud":"382",
+        "dificultad":"Verde",
+        "operativa":"True",
+        "descripcion":"Pista para iniciacion y perfeccionamiento"
+          
+    },
+    {
+        "nombre":"Paralelo",
+        "longitud": "382",
+        "dificultad":"Verde",
+        "operativa":"True",
+        "descripcion":"Pista para iniciacion y perfeccionamiento"
+    },
+    {
+        "nombre":"Zorro",
+        "longitud": "1850",
+        "dificultad":"Azul",
+        "operativa":"True",
+        "descripcion":"Pista para usuarios de nivel medio. Posible hielo a tempranas horas"
+    },
+    {
+        "nombre":"Termopilas",
+        "longitud": "182",
+        "dificultad":"Azul",
+        "operativa":"True",
+        "descripcion":"Pista para usuarios de nivel medio. Posible hielo a tempranas horas"
+    },
+    {
+        "nombre":"Rebeco",
+        "longitud": "2327",
+        "dificultad":"Azul",
+        "operativa":"True",
+        "descripcion":"Pista para usuarios de nivel medio. Posible hielo a tempranas horas"
+    },
+    {
+        "nombre":"Zacatin",
+        "longitud": "500",
+        "dificultad":"Rojo",
+        "operativa":"False",
+        "descripcion":"Pista para usuarios de nivel avanzado"
+    },
+    {
+        "nombre":"Granados",
+        "longitud": "1394",
+        "dificultad":"Rojo",
+        "operativa":"True",
+        "descripcion":"Pista para usuarios de nivel avanzado"
+    },
+    {
+        "nombre":"Visera",
+        "longitud": "436",
+        "dificultad":"Negro",
+        "operativa":"True",
+        "descripcion":"Pista para expertos"
+    }
+    
+]

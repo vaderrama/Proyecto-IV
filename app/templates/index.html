@@ -27,8 +27,8 @@
                     <p>Snowboard &nbsp;&bull;&nbsp; Meteorologia &nbsp;&bull;&nbsp; Equipamiento</p>
                     <nav>
                         <ul>
-                            <a <button class="icon fa-twitter" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button></a>
-                            <a <button class="icon fa-twitter" onclick="openCity(event, 'Meteo')" >Meteo</button></a>
+                            <a <button class="icon fa-twitter" onclick="openCity(event, 'Home')" >Home</button></a>
+                            <a <button class="icon fa-twitter" onclick="openCity(event, 'Meteo')" id="defaultOpen">Meteo</button></a>
                             <a <button class="icon fa-twitter" onclick="openCity(event, 'Home')" >Equipacion</button></a>
                             <a <button class="icon fa-twitter" onclick="openCity(event, 'Home')" >About</button></a>
                             <a <button class="icon fa-twitter" onclick="openCity(event, 'Home')" >Perfil</button></a>
@@ -73,16 +73,35 @@
                             
                             <div class="input submit">
                                 <input type="submit" value="Enviar" />
+                                <br>
                                 
-                                <h3> Ciudad : {{ weather.city }}</h3>
                                 
-                                <h4> Temperatura : {{ weather.temperature }}° C</h4>
-                                
-                                <h4> Descripcion del tiempo : {{ weather.description }}</h5>
+                                <div id=mo>
                                     
-                                    <h4> Velocidad viento ( Km/h ): {{ weather.wind }}</h4>
-                                    <p>{{ descripcion }}</p>
+                                    
+                                <h7> Ciudad : </h7>
+                                <h8>{{ weather.city }}</h8>
                                 
+                                <br>
+                                <h7> Temperatura : </h7>
+                                <h8>{{ weather.temperature }}° C</h8>
+                                
+                                <br>
+                                <h7> Descripcion del tiempo : </h7>
+                                <h8>{{ weather.description }}</h8>
+                                
+                                <br>
+                                <h7> Velocidad viento : </h7>
+                                <h8>{{ weather.wind }}( Km/h )</h8>
+                                
+                                
+                                <h7> Humedad : </h7>
+                                <h8>{{ weather.humidity }} %</h8>
+                                <br>
+                                
+                                <h7> Estado Estación SNOWMET : <h7>
+                                <h8>{{ descripcion }}</h8>
+                                </div>
                                     
                                     
                                     </div>
@@ -126,6 +145,7 @@
                             </script>
                             
                             </header>
+                
                 
                 
                 <!-- Footer -->
