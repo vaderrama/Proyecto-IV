@@ -87,7 +87,7 @@ Actualmente , el microservicio dispone de dos rutas :
 
 ****/tiempo**** : En esta ruta , la aplicación devuelve el tiempo y sus características ademas de un "status" personalizado.
 
-****/ , /status**** : En esta ruta se nos devuelve un JSON "OK" para poder visualizar el funcionamiento del sistema. 
+****/, /status**** : En esta ruta se nos devuelve un JSON "OK" para poder visualizar el funcionamiento del sistema. 
 
 ****/pistas**** : En esta ruta , la aplicación devuelve las pistas operativas y sus características.
 
