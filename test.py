@@ -1,34 +1,35 @@
 import pytest
 import requests
-from app.forms import CiudadForm
-from app.meteoclass import *
-from app.main import get_weather , inicio , statusTiempo
+from app.Meteo import Meteo
+from app.main import *
+from app.Pistas import Pistas
 
-"""
-def test_form():
-    form = None
-    form = CiudadForm(request.form)
-    assert form == None,"Formulario city creado correctamente"
-    """
-"""
-def test_inicializar(self):
-    self.city = 'Almeria, ES'
-    self.temperature = 20
-    self.wind = 20
-    self.humidity = 20
-    self.icon = '10d'
-"""
+m = Meteo()
+
+
+def test_inicializar():
+    n=Meteo()
+    assert isinstance(n,Meteo), "Error al inicializar"
+
 def test_getweather():
-    weather = get_weather('Almeria, ES')
+    weather = m.get_weather('Almeria, ES')
     if type(weather) == type(dict):
         pass
-"""
-def test_inicio():
-    n = inicio()
-    assert n != None, "Error al iniciar"
-"""
+
+
 def test_status():
     devol = None
-    weather = get_weather('Pradollano, ES')
-    devol = statusTiempo(weather)
-    assert devol == None, "Error al tener un Status "
+    weather = m.get_weather('Pradollano, ES')
+    devol = m.statusTiempo(weather)
+    assert devol != None, "Error al tener un Status "
+
+def test_inicializarPistas():
+    p = Pistas()
+    assert isinstance(p,Pistas),"Error al inicializar"
+"""
+def test_pistasOperativas():
+    operativas=[]
+    p = Pistas()
+    operativas = p.pistasOperativas()
+    assert operativas != [], "Error al tener pistas operativas"
+"""
