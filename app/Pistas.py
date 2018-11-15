@@ -9,9 +9,9 @@ class Pistas:
 
     def __init__(self):
         
-        with open('pistas.json') as f:
-            self.pistas = json.load(f)
-    
+        if os.path.exists('app/pistas.json'):
+            with open('app/pistas.json', 'r') as f:
+                pistas = json.load(f)
 
     def pistaNueva(self , nombre , longitud  ,dificultad , operativa,description  ):
         self.nombre = nombre
