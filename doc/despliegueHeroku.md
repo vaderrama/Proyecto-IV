@@ -29,5 +29,4 @@ Cuando hemos realizado estos pasos , podremos observar nuestra app en las siguie
 
 Despliegue : https://snowmet.herokuapp.com/ 
 
-Despliegue ***< /app ( Microservicio **SnowMet** actualmente funcionando )> :*** https://snowmet.herokuapp.com/app
 
