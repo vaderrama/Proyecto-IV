@@ -1,7 +1,6 @@
 import pytest
 import requests
 from app.Meteo import Meteo
-from app.main import *
 from app.Pistas import Pistas
 
 m = Meteo()
@@ -23,11 +22,11 @@ def test_status():
     devol = m.statusTiempo(weather)
     assert devol != None, "Error al tener un Status "
 
-"""
+
 def test_inicializarPistas():
     p = Pistas()
     assert isinstance(p,Pistas),"Error al inicializar"
-    """
+    
 """
 def test_pistasOperativas():
     operativas=[]
