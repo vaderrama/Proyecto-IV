@@ -24,7 +24,7 @@ Este servicio puede ser ampliado para mostrar capacidad de alquiler en nuestro s
     
 ## Herramientas utilizadas 
 
-- Lenguaje de programacion : Python. Además HTML y CSS
+- Lenguaje de programacion : Python.
 
 - Como BD utilizaremos : MongoDB ( Posible cambio en un futuro )
 
@@ -59,7 +59,8 @@ Para proceder a su despliegue , hemos vinculado nuestro repositorio de GitHub co
 
 Despliegue : https://snowmet.herokuapp.com/ 
 
-Despliegue ***< /app ( Microservicio **SnowMet** actualmente funcionando )> :*** https://snowmet.herokuapp.com/app
+En esta ruta se explica como se ha desarrollado el despliegue : [Despliegue Heroku](https://github.com/vaderrama/Proyecto-IV/blob/master/doc/despliegueHeroku.md)
+
 - ### Procfile
 
     En nuestro procfile disponemos de dos lineas :
@@ -69,7 +70,9 @@ Despliegue ***< /app ( Microservicio **SnowMet** actualmente funcionando )> :***
 
 ## Descripción Clase y archivos principales
 
-Actualmente esta app dispone de una clase llamada **meteoclass.py**  , la cual se encarga de la gestion de las variables referentes al clima , asi como su llamada a la API y la gestion de esta información. Esta clase tambien informa del estatus propio externo a la API.
+Actualmente esta app dispone de una clase llamada **meteo.py**  , la cual se encarga de la gestion de las variables referentes al clima , asi como su llamada a la API y la gestion de esta información. Esta clase tambien informa del estatus propio externo a la API.
+
+Disponemos de otra clase llamada **pistas.py**, la cual se encarga de la gestion de las pistas e informacion relativa a su disponibilidad , longitud , nombre , etc
 
 Disponemos de una clase **forms.py** para la gestion de los formularios en nuestro sistema web. 
 
@@ -82,13 +85,10 @@ El sistema web esta alojado en las carpetas **templates** y **static**. Donde po
 
 Actualmente , el microservicio dispone de dos rutas :
 
-****/app**** : En esta ruta , la aplicación despone de 4 menus en forma de botón. En ellos podemos acceder al "Home" , "Meteo" , "Equipacion" , "About".
-            
-            - Home : Directorio principal de la app. Breve descripción del proyecto
-            - Meteo : Zona de analisis meteorológico , donde introduciendo una Ciudad podemos observar las distintas características de la climatologia. 
-            - Equipación : Zona de ayuda , analisis y estimacion del mejor equipamiento necesario para tu nivel de habilidad. ( Parte correspondiente a nuestra Colaboracion [Equipamiento](https://github.com/Alvarosanpal/Proyecto_IV))
-            - About : Información respecto al creador.
+****/tiempo**** : En esta ruta , la aplicación devuelve el tiempo y sus características ademas de un "status" personalizado.
 
 ****/ , /status**** : En esta ruta se nos devuelve un JSON "OK" para poder visualizar el funcionamiento del sistema. 
+
+****/pistas**** : En esta ruta , la aplicación devuelve las pistas operativas y sus características.
 
 
