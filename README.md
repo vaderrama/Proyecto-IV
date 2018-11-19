@@ -75,9 +75,10 @@ En esta ruta se explica como se ha desarrollado el despliegue : [Despliegue Hero
 Hemos utilizado el sistema de "DockerHub" para crear un contenedor con la aplicación y seguidamente desplegarla utilizando Heroku.
 Para ello hemos seguido los pasos que estan referidos en el siguiente documento : [Documentación Docker](https://github.com/vaderrama/Proyecto-IV/blob/master/doc/despliegueDocker.md)
 
-Contenedor en Dockerhub: https://hub.docker.com/r/vaderrama/proyecto-iv/
-
 Contenedor: https://snowmet-docker.herokuapp.com/
+
+Contenedor: https://hub.docker.com/r/vaderrama/proyecto-iv/
+
 
 ## Descripción Clase y archivos principales
 
