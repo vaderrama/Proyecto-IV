@@ -36,6 +36,8 @@ Este servicio puede ser ampliado para mostrar capacidad de alquiler en nuestro s
 
 - Despliege : Heroku
 
+- Contenedor : DockerHub
+
 
 ## El porqué de este proyecto.
 
@@ -67,6 +69,14 @@ En esta ruta se explica como se ha desarrollado el despliegue : [Despliegue Hero
         - En la primera linea se indica al procfile donde se encuentra nuestro archivo principal y como ejecutarlo , utilizamos el proceso **"web"**. Además del log
         - La segunda linea no la esta activada actualmente , ya que no la necesitamos por ahora.  ( "worker" )
         
+    
+## Despliegue DockerHub 
+
+Hemos utilizado el sistema de "DockerHub" para crear un contenedor con la aplicación y seguidamente desplegarla utilizando Heroku.
+Para ello hemos seguido los pasos que estan referidos en el siguiente documento : [Documentación Docker](https://github.com/vaderrama/Proyecto-IV/blob/master/doc/despliegueDocker.md)
+
+Despliegue : https://snowmet-docker.herokuapp.com/
+Despliegue en Docker : https://hub.docker.com/r/vaderrama/proyecto-iv/
 
 ## Descripción Clase y archivos principales
 
@@ -90,5 +100,6 @@ Actualmente , el microservicio dispone de dos rutas :
 ****/, /status**** : En esta ruta se nos devuelve un JSON "OK" para poder visualizar el funcionamiento del sistema. 
 
 ****/pistas**** : En esta ruta , la aplicación devuelve las pistas operativas y sus características.
+
 
 
