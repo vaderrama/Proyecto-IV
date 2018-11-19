@@ -50,7 +50,7 @@ class Meteo:
         if tmp <= 2 and viento > 40 and hume > 50:
             status = ' Las probabilidades de que las pistas esten cerradas o no se pueda practicar deporte sin riesgos son muy altas'
 
-        if tmp >0 and tmp < 15 and viento > 0 and viento < 10  and hume > 20 and hume < 80:
+        if tmp >0 and tmp < 15 and viento > 0 and viento < 10  and hume > 20 and hume < 100:
             status = ' Las condiciones son idoneas. Disfruta del dia! '
     
     
@@ -66,7 +66,8 @@ class Meteo:
         
         if tmp < -5 and viento > 10 and viento < 30 and hume < 50 :
             status = ' Evite zonas expuestas , la temperatura podria ser muy baja y las pistas podrian estar congeladas '
-                
+        
+
         
         return status
             
