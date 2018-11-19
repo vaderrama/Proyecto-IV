@@ -3,3 +3,4 @@ build:
     web: Dockerfile
 run:
 web: cd app && gunicorn main:app --log-file=-
+ 
