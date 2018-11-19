@@ -8,17 +8,11 @@ class Pistas:
 
 
     def __init__(self):
-        """Funciona en Travis-CI"""
-        """
-        if os.path.exists('data/pistas.json'):
-            with open('data/pistas.json', 'r') as f:
-                self.pistas = json.load(f)
-"""
-
-        """ Funciona en local """
-            
+        
         with open('pistas.json', 'r') as f:
             self.pistas = json.load(f)
+
+    
                     
     def pistaNueva(self , nombre , longitud  ,dificultad , operativa,description  ):
         self.nombre = nombre

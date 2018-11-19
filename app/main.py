@@ -1,8 +1,8 @@
 from flask import Flask, render_template, redirect , session ,request , redirect , url_for,jsonify
 import requests
-from app.forms import LoginForm,CiudadForm
 from Meteo import Meteo
 from Pistas import Pistas
+
 
 app = Flask(__name__)
 
@@ -54,4 +54,3 @@ def pistas():
     return jsonify(pistas)
 
 
-    
