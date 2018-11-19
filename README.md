@@ -78,6 +78,8 @@ Para ello hemos seguido los pasos que estan referidos en el siguiente documento 
  - Despliegue : https://snowmet-docker.herokuapp.com/
 
  - Contenedor : https://hub.docker.com/r/vaderrama/proyecto-iv/
+ 
+ - Despliegue Docker : https://snowmet-docker.herokuapp.com/
 
 ## Descripción Clase y archivos principales
 
