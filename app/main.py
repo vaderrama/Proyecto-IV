@@ -10,9 +10,15 @@ m = Meteo()
 p = Pistas()
 
 
-@app.route('/')
+@app.route('/',methods=['GET'])
 def inicio():
-    return jsonify(status="Ok")
+    status={"status":"OK"}
+    return jsonify(status)
+
+@app.route('/status',methods=['GET'])
+def inicio2():
+    status={"status":"OK"}
+    return jsonify(status)
 
 @app.route('/web' ,methods=['GET', 'POST'])
 def index():
