@@ -2,5 +2,5 @@ build:
   docker:
     web: Dockerfile
 run:
-web: cd app && gunicorn main:app --log-file=-
+    web: cd app && gunicorn main:app --log-file=-
  
