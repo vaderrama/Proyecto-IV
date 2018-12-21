@@ -16,12 +16,7 @@ Nombre del proyecto: SnowMet
 
 Desarrollado por : Juan Alvarez Carrasco
 
-## Colaboración
-Este proyecto sera unificado con el proyecto de [Alvarosanpal](https://github.com/Alvarosanpal/Proyecto_IV) , el cual se encargará de la gestion de equipamiento necesario , asi como su recomendacion personalizada.
 
-Este servicio puede ser ampliado para mostrar capacidad de alquiler en nuestro servicio , asi como compra de forfeits o alquiler de profesores. 
-
-    
 ## Herramientas utilizadas 
 
 - Lenguaje de programacion : Python.
@@ -88,8 +83,7 @@ Contenedor: https://hub.docker.com/r/vaderrama/proyecto-iv/
 
 Se utiliza Azure como IaaS , Fabric como el automatizador del despliegue , Vagrant como orquestador y creador de las maquinas virtuales necesarias para el correcto funcionamiento del microservicio y Ansible como provisionamiento de las mismas. 
 
-[Documentación Despliegue Nube](https://github.com/vaderrama/Proyecto-IV/blob/master/doc/desplieguenube.md)
-
+[Documentación Despliegue Nube](https://github.com/vaderrama/Proyecto-IV/blob/master/doc/despliegueNube.md)
 Despliegue final: http://snowmetiv.westus.cloudapp.azure.com
 
 Las distintas rutas pueden verse en el archivo : [main.py](https://github.com/vaderrama/Proyecto-IV/blob/master/app/main.py)
