@@ -84,6 +84,7 @@ Contenedor: https://hub.docker.com/r/vaderrama/proyecto-iv/
 Se utiliza Azure como IaaS , Fabric como el automatizador del despliegue , Vagrant como orquestador y creador de las maquinas virtuales necesarias para el correcto funcionamiento del microservicio y Ansible como provisionamiento de las mismas. 
 
 [Documentación Despliegue Nube](https://github.com/vaderrama/Proyecto-IV/blob/master/doc/despliegueNube.md)
+
 Despliegue final: http://snowmetiv.westus.cloudapp.azure.com
 
 Las distintas rutas pueden verse en el archivo : [main.py](https://github.com/vaderrama/Proyecto-IV/blob/master/app/main.py)
