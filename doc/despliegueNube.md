@@ -33,7 +33,7 @@ Ejecución de Ansible-playbook playbook.yml :
 En este punto , he utilizado Vagrant para la orquestación en la creación de las maquinas virtuales , ademas de Azure para el despliegue en la nube de las mismas. 
 
 Para ello , es necesario crear un archivo llamado Vagrantfile.
-Archivo  Vagranfile : [Vagrantfile](https://github.com/vaderrama/Proyecto-IV/blob/masterVagrantfile)
+Archivo  Vagranfile : [Vagrantfile](https://github.com/vaderrama/Proyecto-IV/blob/master/Vagrantfile)
 
 En este archivo se han utilizado unas reglas específicas para el uso y despliegue de una máquina virtual con Vagrant y Azure. 
 Ademas , se necesita exportar las variables de entorno que podemos observar en el archivo , como son : **TenantID , ClientID, ClientSecret , SubscriptionID**
