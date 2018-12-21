@@ -85,8 +85,13 @@ Se utiliza Azure como IaaS , Fabric como el automatizador del despliegue , Vagra
 
 [Documentación Despliegue Nube](https://github.com/vaderrama/Proyecto-IV/blob/master/doc/despliegueNube.md)
 
-URL Despliegue final: http://snowmetiv.westus.cloudapp.azure.com
+
 Despliegue final: 104.42.74.87
+
+
+URL Despliegue final: http://snowmetiv.westus.cloudapp.azure.com
+
+
 
 Las distintas rutas pueden verse en el archivo : [main.py](https://github.com/vaderrama/Proyecto-IV/blob/master/app/main.py)
 
