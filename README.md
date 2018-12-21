@@ -26,7 +26,7 @@ Este servicio puede ser ampliado para mostrar capacidad de alquiler en nuestro s
 
 - Lenguaje de programacion : Python.
 
-- Como BD utilizaremos : MongoDB ( Posible cambio en un futuro )
+- Como BD utilizaremos : MongoDB
 
 - Framework : Flask
 
@@ -34,10 +34,15 @@ Este servicio puede ser ampliado para mostrar capacidad de alquiler en nuestro s
 
 - Integración Continua : Travis-CI
 
-- Despliege : Heroku
+- Despliege : Heroku y Azure
 
 - Contenedor : DockerHub
 
+- Provisionamiento : Ansible 
+
+- Automatización despliegue : Fabric 
+
+- Orquestación y creación maquinas virtuales : Vagrant 
 
 ## El porqué de este proyecto.
 
@@ -79,6 +84,15 @@ Contenedor: https://snowmet-docker.herokuapp.com/
 
 Contenedor: https://hub.docker.com/r/vaderrama/proyecto-iv/
 
+## Despliegue desde 0 en la nube 
+
+Se utiliza Azure como IaaS , Fabric como el automatizador del despliegue , Vagrant como orquestador y creador de las maquinas virtuales necesarias para el correcto funcionamiento del microservicio y Ansible como provisionamiento de las mismas. 
+
+[Documentación Despliegue Nube](https://github.com/vaderrama/Proyecto-IV/blob/master/doc/desplieguenube.md)
+
+Despliegue final: http://snowmetiv.westus.cloudapp.azure.com
+
+Las distintas rutas pueden verse en el archivo : [main.py](https://github.com/vaderrama/Proyecto-IV/blob/master/app/main.py)
 
 ## Descripción Clase y archivos principales
 
@@ -89,8 +103,6 @@ Disponemos de otra clase llamada **pistas.py**, la cual se encarga de la gestion
 Disponemos de una clase **forms.py** para la gestion de los formularios en nuestro sistema web. 
 
 El fichero principal **main.py** se encarga de atender las peticiones de la app de manera directa. 
-
-El sistema web esta alojado en las carpetas **templates** y **static**. Donde podremos encontrar las diferentes herramientas utilizadas para su correcta estructura , visualización y estilo.
 
 
 ## Avance SnowMet
