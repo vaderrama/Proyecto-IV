@@ -67,7 +67,8 @@ class Meteo:
         if tmp < -5 and viento > 10 and viento < 30 and hume < 50 :
             status = ' Evite zonas expuestas , la temperatura podria ser muy baja y las pistas podrian estar congeladas '
         
-
+        if tmp >0 and tmp < 10 and viento > 0 and viento < 60 and hume > 0 and hume < 100:
+            status = ' Evite zonas altas y expuestas , las condiciones son favorables en zonas bajas pero en zonas altas el viento podria aumentar considerablemente ' 
         
         return status
             
