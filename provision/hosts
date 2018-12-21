@@ -1,2 +1,2 @@
 [snowmetiv]
-104.42.74.87 ansible_ssh_user=vagrant
+104.42.74.87 ansible_ssh_user=vagrant 
