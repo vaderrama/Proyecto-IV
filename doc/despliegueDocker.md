@@ -12,6 +12,8 @@ Para ello , necesitamos registrarnos en la web : [DockerHub](https://hub.docker.
  
  ### Dockerfile
  - El archivo de configuración de DockerHub , es necesario para la automatización de la creación de una imagen que contiene todo lo necesario para la ejecución de nuestra aplicación. 
+ 
+ En el propio archivo , [Dockerfile](https://github.com/vaderrama/Proyecto-IV/blob/master/Dockerfile) disponemos de varias lineas comentando cada una de las ordenes que hemos utilizado en el. 
 
 ### Construcción de la imagen 
 
