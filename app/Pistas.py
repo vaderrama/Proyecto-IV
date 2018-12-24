@@ -24,10 +24,12 @@ class Pistas:
     
     def getPistaNombre(self, nombre):
         pista = []
+        
         for i in self.pistas:
             if i["nombre"] == nombre:
-                devolver = i
-            return devolver
+                pista.append(i)
+                    
+        return pista
 
     def pistasOperativas(self):
     
@@ -38,18 +40,35 @@ class Pistas:
             if i["operativa"] == "True":
                 operativas.append(i)
 
+
+
         return operativas
 
 
 
     def pistasDificultad(self, dificultad):
         """Creamos array con las pistas segun la dificultad y si estan operativas"""
+        pistas=[]
+        
+        for i in self.pistas:
+            if i["operativa"] == "True":
+                if i["dificultad"] == dificultad:
+                    pistas.append(i)
         
         
         return pistas
     
     def pistasLongitud(self, longitud):
-
         """Creamos array de pistas con las pistas que superen la longitud introducida"""
+        pistas=[]
+        
+        for i in self.pistas:
+            intlong = int(i["longitud"])
+            if intlong >= intlong2:
+                pistas.append(i)
+        
         
         return pistas
+
+
+

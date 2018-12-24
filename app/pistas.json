@@ -47,7 +47,7 @@
         "nombre":"Zacatin",
         "longitud": "500",
         "dificultad":"Rojo",
-        "operativa":"False",
+        "operativa":"True",
         "descripcion":"Pista para usuarios de nivel avanzado"
     },
     {

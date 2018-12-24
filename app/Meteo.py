@@ -70,6 +70,8 @@ class Meteo:
         if tmp >0 and tmp < 10 and viento > 0 and viento < 60 and hume > 0 and hume < 100:
             status = ' Evite zonas altas y expuestas , las condiciones son favorables en zonas bajas pero en zonas altas el viento podria aumentar considerablemente ' 
         
+        if tmp < 0 and viento < 10 and hume > 50:
+            status = ' Posibles heladas al principio de la jornada. Temperaturas bajas en zonas expuestas. Viento : Flojo. Condiciones bastante buenas para la practica de deporte. '
         return status
             
     
