@@ -90,8 +90,14 @@ Ya que otras versiones no funcionan correctamente con nuestras necesidades.
 Para ello necesitamos crear un archivo ***fabfile.py***
 
 Archivo fabfile.py : [Fabfile.py](https://github.com/vaderrama/Proyecto-IV/blob/master/despliegue/fabfile.py)
-
 Este archivo consta de diferentes funciones que utilizamos para ejecutar en nuestra maquina , como por ejemplo Iniciar el servicio. 
+
+En el archivo , vienen comentadas las diferentes lineas utilizadas para la creacion de las funciones necesarias. En este caso disponemos de 3 funciones : 
+
+- Iniciar : Inicia el microservicio
+- Actualizar : Actualiza el repositorio desde Github. Primero lo borra y luego vuelve a descargarlo 
+- Borrar : Borra el proyecto guardado. 
+
 
 La orden que necesitamos utilizar para realizar alguna de las funciones de despliegue , por por ejemplo iniciar el servicio seria :
 
