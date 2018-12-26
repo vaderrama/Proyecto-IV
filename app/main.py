@@ -20,6 +20,7 @@ def inicio2():
     status={"status":"OK"}
     return jsonify(status)
 
+"""
 @app.route('/web' ,methods=['GET'])
 def index():
     weather=None
@@ -36,7 +37,7 @@ def index():
     
     
     return render_template('index.html', weather=weather,form=form , descripcion = descripcion )
-
+"""
 
 @app.route('/tiempo/<ciudad>',methods=['GET'])
 def tiempo(ciudad):

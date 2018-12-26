@@ -5,6 +5,15 @@
 
 Hemos utilizado el sistema Heroku por su versatilidad a la hora de desplegar aplicaciones web de pequeña capacidad , así como su perfecta integración con GitHub y Travis-CI , lo que lo hace un servicio PaaS muy recomendando.
 
+Para su correcto funcionamiento , dispondremos de un archivo en nuestro repositorio , llamado **Procfile**
+
+- ### Procfile
+
+ [Procfile](https://github.com/vaderrama/Proyecto-IV/blob/master/Procfile)
+
+En nuestro procfile disponemos de dos lineas :
+- En la primera linea se indica al procfile donde se encuentra nuestro archivo principal y como ejecutarlo , utilizamos el proceso **"web"**. Además del log
+- La segunda linea no la esta activada actualmente , ya que no la necesitamos por ahora.  ( "worker" )
 Para ello , necesitamos registrarnos en la web : [Heroku](https://www.heroku.com/)
 
 Una vez registrados , podemos crear una aplicación ( directorio ) , donde su pagina principal seria algo asi 

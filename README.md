@@ -10,7 +10,14 @@
 
 ## "SnowMet" Microservicio web 
 
-Es proyecto consistira en el desarrollo de un microservicio web orientado al mundo del Snowboard. Donde trataremos en un principio el servicio de meteorologia de las distintas ciudades , asi como el de Sierra Nevada , indicando las caracteristicas concretas de este sitio. Utilizaremos para ello una API de [OpenWeatherMap](https://openweathermap.org/).
+Es proyecto consistira en el desarrollo de un microservicio web orientado al mundo del Snowboard. Donde trataremos en un principio el servicio de meteorologia de las principales ciudades donde se practica este deporte en España , asi como el de Sierra Nevada , indicando las caracteristicas concretas de este sitio.
+
+Dispondremos de información personalizada para cada uno de los lugares y tiempos disponibles en el momento de la consulta. Ademas , en Sierra Nevada disponemos de una clasificación por pistas y de su actividad. 
+
+Este microservicio tambien es funcional para la consulta del tiempo y de sus características en cualquier ciudad del mundo. 
+
+Utilizaremos para ello una API de [OpenWeatherMap](https://openweathermap.org/).
+
 
 Nombre del proyecto: SnowMet
 
@@ -19,9 +26,7 @@ Desarrollado por : Juan Alvarez Carrasco
 
 ## Herramientas utilizadas 
 
-- Lenguaje de programacion : Python.
-
-- Como BD utilizaremos : MongoDB
+- Lenguaje de programacion : Python
 
 - Framework : Flask
 
@@ -39,10 +44,10 @@ Desarrollado por : Juan Alvarez Carrasco
 
 - Orquestación y creación maquinas virtuales : Vagrant 
 
+
 ## El porqué de este proyecto.
 
  El interes por aprender un nuevo lenguaje como Python, el cual me parece de un gran potencial ,  aplicandolo a un campo donde me siento bastante comodo como son los deportes. Ademas de poder crear un servicio de gran utilidad para el publico de este deporte en concreto. 
-
 
 
 ## Instalacion Necesaria 
@@ -63,13 +68,7 @@ Despliegue : https://snowmet.herokuapp.com/
 
 En esta ruta se explica como se ha desarrollado el despliegue : [Despliegue Heroku](https://github.com/vaderrama/Proyecto-IV/blob/master/doc/despliegueHeroku.md)
 
-- ### Procfile
 
-    En nuestro procfile disponemos de dos lineas :
-        - En la primera linea se indica al procfile donde se encuentra nuestro archivo principal y como ejecutarlo , utilizamos el proceso **"web"**. Además del log
-        - La segunda linea no la esta activada actualmente , ya que no la necesitamos por ahora.  ( "worker" )
-        
-    
 ## Despliegue DockerHub 
 
 Hemos utilizado el sistema de "DockerHub" para crear un contenedor con la aplicación y seguidamente desplegarla utilizando Heroku.
@@ -89,32 +88,45 @@ Se utiliza Azure como IaaS , Fabric como el automatizador del despliegue , Vagra
 Despliegue final: 104.42.74.87
 
 
-URL Despliegue final: http://snowmetiv.westus.cloudapp.azure.com
+URL Despliegue final: [Snowmet](http://snowmetiv.westus.cloudapp.azure.com)
 
-
-
-Las distintas rutas pueden verse en el archivo : [main.py](https://github.com/vaderrama/Proyecto-IV/blob/master/app/main.py)
 
 ## Descripción Clase y archivos principales
 
 Actualmente esta app dispone de una clase llamada **meteo.py**  , la cual se encarga de la gestion de las variables referentes al clima , asi como su llamada a la API y la gestion de esta información. Esta clase tambien informa del estatus propio externo a la API.
 
-Disponemos de otra clase llamada **pistas.py**, la cual se encarga de la gestion de las pistas e informacion relativa a su disponibilidad , longitud , nombre , etc
-
-Disponemos de una clase **forms.py** para la gestion de los formularios en nuestro sistema web. 
+Disponemos de otra clase llamada **pistas.py**, la cual se encarga de la gestion de las pistas e informacion relativa a su disponibilidad , longitud , nombre , etc. Además de diferentes funciones que explicaremos en la zona de **Avance** 
 
 El fichero principal **main.py** se encarga de atender las peticiones de la app de manera directa. 
 
 
 ## Avance SnowMet
 
-Actualmente , el microservicio dispone de dos rutas :
+Actualmente , el microservicio dispone de diferentes rutas :
 
-****/tiempo**** : En esta ruta , la aplicación devuelve el tiempo y sus características ademas de un "status" personalizado.
+Las distintas rutas pueden verse en el archivo : [main.py](https://github.com/vaderrama/Proyecto-IV/blob/master/app/main.py)
 
-****/, /status**** : En esta ruta se nos devuelve un JSON "OK" para poder visualizar el funcionamiento del sistema. 
+Aun asi , un breve resumen de las diferentes rutas y aplicaciones : 
 
-****/pistas**** : En esta ruta , la aplicación devuelve las pistas operativas y sus características.
+    /tiempo : En esta ruta , la aplicación devuelve el tiempo y sus características ademas de un "status" personalizado.
+        - /tiempo/<ciudad> : Podemos acceder al tiempo de la ciudad que queramos haciendo 'http://snowmetiv.westus.cloudapp.azure.com/tiempo/<ciudad,Pais>'
+        
+        - Un ejemplo seria 'http://snowmetiv.westus.cloudapp.azure.com/tiempo/Granada,ES'
+
+    /tiempoEstaciones : En esta ruta , aplicación devuelve el tiempo y las caracteristicas de las principales estaciones de España , asi como su estado personalizado
+        
+
+    /, /status : En esta ruta se nos devuelve un JSON "OK" para poder visualizar el funcionamiento del sistema. 
+
+    /pistas : En esta ruta , la aplicación devuelve las pistas de Sierra Nevada operativas y sus características.
+        - /pistas/<nombre> : Devuelve la pista segun el nombre introducido y sus caracteristicas
+        - /pistas/dificultad/<color> : Devuelve las pistas operativas segun su dificultad introducida ( verde , azul , roja , negra )
+        - /pistas/<longitud> : Devuelve las pistas con una longitud mayor que la introducida
+        
+    
+    
+
+
 
 
 
