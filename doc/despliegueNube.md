@@ -23,6 +23,18 @@ El archivo que vamos a ejecutar desde Ansible es **playbook.yml**, lo ejecutarem
 
 Archivo playbook.yml : [Playbook.yml](https://github.com/vaderrama/Proyecto-IV/blob/master/provision/playbook.yml)
 
+Destacamos del archivo las 3 primeras lineas : 
+
+    hosts: all
+    become: yes
+    remote_user: vagrant
+
+La primera , se refiere a coger del archivo **hosts** todos los disponibles.
+La segunda , sustituye al comando **sudo** en las siguientes lineas para no tener que utilizarlo
+La tercera usa como usuario remoto siempre el que indicamos , en este caso "vagrant"
+
+El resto de las instrucciones son referidas a su "name". Utilizandolas para diferentes propositos como instalar pip , o clonar el repositorio de GitHub.
+
 Ejecución de Ansible-playbook playbook.yml : 
 
 ![Ansible](img/n7.png)
