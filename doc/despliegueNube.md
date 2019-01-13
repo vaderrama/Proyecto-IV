@@ -126,7 +126,7 @@ En el archivo , vienen comentadas las diferentes lineas utilizadas para la creac
 
 La orden que necesitamos utilizar para realizar alguna de las funciones de despliegue , por por ejemplo iniciar el servicio seria :
 
-    - fab -f fabfile.py -H vagrant@104.42.74.87 Iniciar
+    - fab -f fabfile.py -H vagrant@157.56.166.183 Iniciar
     
 
 
