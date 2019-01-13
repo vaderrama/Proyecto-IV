@@ -50,6 +50,11 @@ Archivo  Vagranfile : [Vagrantfile](https://github.com/vaderrama/Proyecto-IV/blo
 En este archivo se han utilizado unas reglas específicas para el uso y despliegue de una máquina virtual con Vagrant y Azure. 
 Ademas , se necesita exportar las variables de entorno que podemos observar en el archivo , como son : **TenantID , ClientID, ClientSecret , SubscriptionID**
 
+**tenant_id:** El  Tenant ID de tu directorio activo de Azure.
+**client_id:** El Client ID de la aplicacion de tu directorio activo de Azure.
+**client_secret:** El Client Secret de la aplicacion de tu directorio activo de Azure.
+**subscription_id:** La  "Azure Subscription ID"  que has elegido usar.
+
 Para su obteción hemos necesitado hacer "login" en Azure desde nuestro terminal , asi como crear un directorio activo de azure.  
     
     - az login
@@ -60,7 +65,15 @@ Lo que nos devuelve
 ![login](img/n1.png)
 ![creardirectorio](img/n2.png)
 
-Tambien disponemos de 3 lineas donde podemos configurar caracteristicas de la maquina virtual , como su nombre , tamaño o puerto : 
+En el archivo "Vagrantfile" disponemos de varias lineas comentadas y explicadas. En concreto esta linea    :
+-       config.vm.synced_folder ".", "/vagrant", disabled: true
+
+He decidido dejarla debido a la necesidad de introducir las credenciales del SMB en caso de no existir en el Vagrantfile. Puede verse en la siguiente imagen : 
+
+![vagrantfileLinea](img/vr1.png)
+
+
+Tambien disponemos de 3 lineas donde podemos configurar caracteristicas de la maquina virtual , como su nombre , tamaño o puerto ( Se pueden utilizar muchas mas configuraciones opcionales , pero con estas es suficiente para nuestro proyecto ) : 
 
     azure.vm_name = 'snowmetiv'
     azure.vm_size = 'Standard_A1'
