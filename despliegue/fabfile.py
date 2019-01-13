@@ -2,8 +2,6 @@
 from fabric.api import *
 
 
-
-
 # INICIAMOS SISTEMA WEB MEDIANTE GUNICORN
 def Iniciar():
     
