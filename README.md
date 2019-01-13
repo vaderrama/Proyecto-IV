@@ -20,7 +20,6 @@ Utilizaremos para ello una API de [OpenWeatherMap](https://openweathermap.org/).
 
 
 Nombre del proyecto: SnowMet
-
 Desarrollado por : Juan Alvarez Carrasco
 
 
